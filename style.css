@@ -373,12 +373,28 @@ section {
 }
 
 footer {
-    margin-top: 100px;
-    text-align: center;
-    padding: 20px;
-    background: #111;
-    color: white;
+  background-color: #636363;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
+
+
+footer .social-icons a {
+  margin: 10px 15px;
+  display: inline-block;
+}
+
+footer .social-icons img {
+  width: 30px; 
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+footer .social-icons a:hover img {
+  transform: scale(1.2); 
+}
+
 
 @keyframes slideInLeft {
     from {
