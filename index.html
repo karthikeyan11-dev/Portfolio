@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Karthikeyan</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/favicon-2.png" sizes="32x32" type="image/png">
 </head>
 <body>
-    <!-- header -->
     <header class="header1">
+        <div>
+            <img src="/images/favicon-2.png" alt="Logo">
+            <h2>Karthikeyan</h2>
+        </div>
         <nav>
-            <h2>Portfolio</h2>
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
+            <a href="#qualification">Qualification</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </nav>
+        
     </header>
-
-    
     <section id="home">
-        <div class="profile-pic"><img src="/images/karthi professional.jpg" alt="
-        Photo"></div>
         <div class="hero">
             <h1>Heyy, I am <span>Karthikeyan</span> !</h1>
             <p>aspiring full stack developer</p>
             <a href="#contact">Looking for a passionate developer? I’m here! <br> Let's build something amazing together</a>
         </div>
+        <div class="profile-pic"><img src="/images/karthi professional.jpg" alt="
+        Photo"></div>
     </section>
     <hr style="border: 2px solid black;">
     <section id="about">
@@ -34,11 +38,6 @@
         <p>Hello! I'm a Full Stack Developer with a strong foundation in both front-end and back-end technologies. My skillset includes HTML, CSS, JavaScript, React, Python, DJango, and MongoDB. Whether it’s designing a pixel-perfect UI or building powerful server-side logic, I love turning ideas into real, functional applications.</p>
         <p>I thrive in collaborative environments, enjoy solving complex problems, and have a keen eye for performance and clean code. I believe in writing maintainable code and following best practices to deliver high-quality solutions. I'm also constantly learning and staying updated with the latest trends in web development.</p>
         <p>Outside of coding, I’m passionate about learning new technologies, contributing to open-source projects, and occasionally writing about what I learn. My goal is to work on meaningful projects that challenge me and help me grow as a developer.</p>
-    </section>
-    <hr style="border: 2px solid black;">
-    <section id="skills">
-        
-
     </section>
     <hr style="border: 2px solid black;">
     <h3 class="proj">Projects</h3>
@@ -61,35 +60,85 @@
         </div>
     </section>
     <hr style="border: 2px solid black;">
-    <h3 class="proj">Contact <span>Me</span></h3>
+    <h3 class="qual">Qualification</h3>
+    <section id="qualification">
+        <table>
+            <thead>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Board/University</th>
+                    <th>Year</th>
+                    <th>Percentage / CGPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>B.E. Computer Science and Engineering</td>
+                    <td>KPR Institute of Engineering and Technology</td>
+                    <td>Anna University</td>
+                    <td>2023 - 2027</td>
+                    <td>8.1 CGPA</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td rowspan="2">Bharathi Matric Higher Secondary School</td>
+                    <td rowspan="2">State Board</td>
+                    <td rowspan="2">2019 - 2021</td>
+                    <td>92%</td>
+                </tr>
+                <tr>
+                    <td>SSLC</td>
+                    <td>92%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr style="border: 2px solid black;">
+    <h3 class="ski">My <span>Skills</span></h3>
+    <section id="skills">
+        <div class="skills-grid">
+            <div class="skill"><img src="/images/html.png" alt="HTML"><span>HTML</span></div>
+            <div class="skill"><img src="/images/css-3.png" alt="CSS"><span>CSS</span></div>
+            <div class="skill"><img src="/images/js.png" alt="JavaScript"><span>JavaScript</span></div>
+            <div class="skill"><img src="/images/react.png" alt="React"><span>React</span></div>
+            <div class="skill"><img src="/images/python.png" alt="Python"><span>Python</span></div>
+            <div class="skill"><img src="/images/django.png" alt="Django"><span>Django</span></div>
+            <div class="skill"><img src="/images/github.png" alt="Git"><span>Git</span></div>
+        </div>
+    </section>
+    <hr style="border: 2px solid black;">
+    <h3 class="con">Contact <span>Me</span></h3>
     <section id="contact">
-        <form action="mailto:km727276@gmail.com" method="post" enctype="text/plain" class="contact-form">
+        <form class="contact-form">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
+            <input type="text" id="name" placeholder="Enter your full name" required>
 
-            <label for="email">e-Mail:</label>
-            <input type="email" id="email" name="email" placeholder="example@mail.com" required><br>
-
+            <label for="email">Email:</label>
+             <input type="email" id="email" placeholder="example@mail.com" required>
+ 
             <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" placeholder="9876543210" pattern="[0-9]{10}" required><br>
+            <input type="tel" id="phone" placeholder="9876543210" required>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Your message here..." required></textarea><br>
+            <textarea id="message" rows="4" placeholder="Your message here..." required></textarea>
 
             <button type="submit">Send Message</button>
-            <button type="reset">Reset</button>
+            <button type="reset">Reset Form</button>
         </form>
-        <h4 class="address">Address</h4>
-        <address class="add">
-            <p><strong>Visit us at: </strong>portfolio.com <br>
-            No. 12, Valluvar Street,<br>
-            Gandhipuram, Coimbatore – 641012,<br>
-            Tamil Nadu,India </p><br>            <p><strong>phone:</strong>1234567899</p> <br>
-            <p><strong>e-Mail:</strong>example@gmail.com</p>
 
-        </address>
-        <h3 class="thank">Thank<span> You</span>!</h3>
+        <div class="ad">
+            <div class="address">Address</div>
+                <p><strong>Visit us at:</strong> portfolio.com</p>
+                <p>No. 12, Valluvar Street, Gandhipuram, Coimbatore – 641012,<br>Tamil Nadu, India</p>
+                <p><strong>Phone:</strong> 1234567899</p>
+                <p><strong>e-mail:</strong> example@gmail.com</p>
+            </div>
     </section>
+
+        <div class="thank">Thank <span>You!</span></div>
+
+        </section>
     <footer>
     <p>&copy; 2025 Karthikeyan. All rights reserved.</p>
     </footer>
